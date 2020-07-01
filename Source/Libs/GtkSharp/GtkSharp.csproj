@@ -1,9 +1,9 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <TargetFramework>netstandard2.0</TargetFramework>
-    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <TargetFrameworks>netstandard2.0;net451</TargetFrameworks>
+    <AppendTargetFrameworkToOutputPath>true</AppendTargetFrameworkToOutputPath>
     <PackageIconUrl>https://raw.githubusercontent.com/GtkSharp/GtkSharp/develop/Source/Libs/GtkSharp/Icon.png</PackageIconUrl>
     <PackageProjectUrl>https://github.com/GtkSharp/GtkSharp</PackageProjectUrl>
     <RepositoryUrl>https://github.com/GtkSharp/GtkSharp</RepositoryUrl>
@@ -12,15 +12,12 @@
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>..\..\GtkSharp.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
-
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <OutputPath>..\..\..\BuildOutput\Debug</OutputPath>
   </PropertyGroup>
-
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <OutputPath>..\..\..\BuildOutput\Release</OutputPath>
   </PropertyGroup>
-
   <ItemGroup>
     <ProjectReference Include="..\GLibSharp\GLibSharp.csproj">
       <Name>GLibSharp</Name>

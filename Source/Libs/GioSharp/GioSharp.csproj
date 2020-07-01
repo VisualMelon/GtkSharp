@@ -1,8 +1,8 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <TargetFramework>netstandard2.0</TargetFramework>
-    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <TargetFrameworks>netstandard2.0;net451</TargetFrameworks>
+    <AppendTargetFrameworkToOutputPath>true</AppendTargetFrameworkToOutputPath>
     <PackageProjectUrl>https://github.com/GtkSharp/GtkSharp</PackageProjectUrl>
     <RepositoryUrl>https://github.com/GtkSharp/GtkSharp</RepositoryUrl>
     <Description>GioSharp is a C# wrapper for the Gio library.</Description>
